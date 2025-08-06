@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Moja ładna strona</title>
+  <meta charset="UTF-8">
+  <title>Scroll Strona</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #6b73ff, #000dff);
-      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #b6fcb6; /* jasnozielony */
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      text-align: center;
     }
-    h1 {
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+    .hero h1 {
+      font-size: 3em;
+      color: #2e7d32;
     }
-    button {
-      background-color: #ff7f50;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2rem;
+
+    .scroll-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background-color: #4caf50;
       color: white;
-      border-radius: 8px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-      box-shadow: 0 4px 8px rgba(255,127,80,0.5);
-      transition: background-color 0.3s ease;
+      text-decoration: none;
     }
-    button:hover {
-      background-color: #ff6347;
+
+    .scroll-button:hover {
+      background-color: #388e3c;
+    }
+
+    #scrol {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a5d6a7;
+      font-size: 2em;
+      color: #1b5e20;
     }
   </style>
 </head>
 <body>
-  <h1>Witaj na mojej stronie!</h1>
-  <button onclick="window.location.href='https://twojadroga.pl'">
-    Przejdź na stronę drogą
-  </button>
+
+  <div class="hero">
+    <h1>Zjedź na stronę</h1>
+    <a href="#scrol" class="scroll-button">Scroll</a>
+  </div>
+
+  <div id="scrol">
+    Witaj na sekcji „scrol”!
+  </div>
+
 </body>
 </html>
