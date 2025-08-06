@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <title>Moja pierwsza strona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moja ładna strona</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6b73ff, #000dff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    button {
+      background-color: #ff7f50;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(255,127,80,0.5);
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff6347;
+    }
+  </style>
 </head>
 <body>
   <h1>Witaj na mojej stronie!</h1>
-  <p>GitHub Pages działa! 🚀</p>
+  <button onclick="window.location.href='https://twojadroga.pl'">
+    Przejdź na stronę drogą
+  </button>
 </body>
 </html>
